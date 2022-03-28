@@ -1,6 +1,6 @@
 {
   "name": "batch-qrcode-generator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a batch qr code generator",
   "main": "generator.js",
   "scripts": {
