@@ -4,7 +4,8 @@
   "description": "a batch qr code generator",
   "main": "generator.js",
   "scripts": {
-    "lint": "eslint generator.js"
+    "lint": "eslint generator.js",
+    "build": "pkg ."
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,14 @@
   "devDependencies": {
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
+    "pkg": "^5.5.2",
     "prettier": "^2.6.1"
   },
   "bin": {
     "batch-qrcode-generator": "./generator.js"
+  },
+  "pkg": {
+    "targets": ["node16-linux-x64", "node16-macos-x64", "node16-macos-arm64", "node16-windows-x64"],
+    "outputPath": "bin"
   }
 }
