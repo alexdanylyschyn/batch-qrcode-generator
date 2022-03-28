@@ -45,11 +45,9 @@ const QRCode = require("qrcode");
   console.log("setting up directories...");
   await fs.mkdir(dirPath, { recursive: true });
 
-  // Read file
   console.log("reading file...");
   const content = await fs.readFile(filePath);
 
-  // Parse CSV
   console.log("parsing csv...");
   const records = parse(content, {
     delimiter: ";",
@@ -58,7 +56,6 @@ const QRCode = require("qrcode");
 
   const rows = [];
 
-  // Map all records to our article archive
   console.log("generating links...");
   records.map((record) => {
     const slug = record[args.column]
@@ -74,8 +71,6 @@ const QRCode = require("qrcode");
     };
     rows.push(link);
   });
-
-  //links.map((record) => console.log(record));
 
   console.log("generating qr codes...");
   rows.map(async (row) => {
