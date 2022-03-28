@@ -1,0 +1,26 @@
+{
+  "name": "batch-qrcode-generator",
+  "version": "0.0.1",
+  "description": "a batch qr code generator",
+  "main": "generator.js",
+  "scripts": {
+    "lint": "eslint generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexdanylyschyn/batch-qrcode-generator.git"
+  },
+  "author": "Alexander Danylyschyn",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.12.0",
+    "csv-stringify": "^5.5.1",
+    "qrcode": "^1.5.0",
+    "yargs": "^17.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.1"
+  }
+}
