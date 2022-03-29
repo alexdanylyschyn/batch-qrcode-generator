@@ -28,3 +28,4 @@ You can use a few different options to customize the output
 | --column / -c    | no       | The column in the CSV file to generate the QRCode from         | 1       |
 | --outputDir / -o | no       | Path to the output directory relative to the current directory | ""      |
 | --prefix / -p    | no       | A prefix added to the string encoded in the QRCode             | ""      |
+| --delimiter / -d | no       | The delimiter used in the input CSV file                       | ";"     |
