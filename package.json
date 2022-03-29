@@ -5,7 +5,7 @@
   "main": "generator.js",
   "scripts": {
     "lint": "eslint generator.js",
-    "build": "pkg ."
+    "build": "pkg -C GZip ."
   },
   "repository": {
     "type": "git",
