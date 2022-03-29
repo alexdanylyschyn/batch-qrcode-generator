@@ -36,6 +36,12 @@ const QRCode = require("qrcode");
       default: "",
       description: "A prefix added to the string encoded in the QRCode",
     })
+    .option("delimiter", {
+      alias: "d",
+      type: "string",
+      default: ";",
+      description: "The delimiter used in the input CSV file",
+    })
     .demandOption(["file"])
     .parse();
 
@@ -50,7 +56,7 @@ const QRCode = require("qrcode");
 
   console.log("parsing csv...");
   const records = parse(content, {
-    delimiter: ";",
+    delimiter: args.delimiter,
     trim: true,
   });
 
